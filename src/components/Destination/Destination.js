@@ -6,9 +6,7 @@ import './Destination.css';
 
 const Destination = () => {
     const {id,placeFrom,placeTo} = useParams();
-    console.log(id);
     const {name, data, imageURL,} = Riders.find(vehicle => vehicle.id == id);
-    console.log(name,imageURL,data);
     const {gMap} = fakePlace.find(place => place.name === placeFrom);
     return (
         <div className="map-style" >     
@@ -24,12 +22,10 @@ const Destination = () => {
                     Fare: {vehicleName.fare}$
                 </p>
                 </ul>)}
-            
             </div>
-            <div >
-            <iframe src={gMap} width="500px" height="500px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div className="map">
+            <iframe className="google-map" src={gMap} width="500px" height="500px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-           
         </div>
     );
 };

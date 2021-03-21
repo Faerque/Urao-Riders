@@ -2,7 +2,7 @@
 
 This project is build with react
 
-To Run this Project please use npm start from command section,
+To Run this Project please use `npm start` from command section,
 
 Here, I used react for whole site and react router for navigate the easily. Private router is also being used for make its auth more secret.
 

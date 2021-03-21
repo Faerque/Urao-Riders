@@ -13,7 +13,7 @@ const Header = () => {
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div className="navbar-nav navbar-urao justify-content-left">
+      <div className="navbar-nav ">
         <Link className="nav-link active" aria-current="page" to="/home">Home</Link>
         <Link className="nav-link" to="/destination">Destination</Link>
         <Link className="nav-link" to="/blog">Blog</Link>
@@ -26,7 +26,9 @@ const Header = () => {
     </div>
   </div>
 </nav>
+
     </div>
+    
   );
 };
 

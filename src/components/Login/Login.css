@@ -19,3 +19,11 @@
 .Social-Login{
     margin-left:3%;
 }
+@media screen and (max-width:480px){
+    .login-info{
+        margin-left: 20%;
+        margin-top: 20%;
+           
+       }
+
+}
